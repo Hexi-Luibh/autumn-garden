@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.autumngarden;
+package com.ailieluibh.autumngarden;
 
 import com.google.inject.Provides;
 import lombok.AccessLevel;

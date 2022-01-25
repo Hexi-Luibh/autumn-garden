@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.autumngarden;
+package com.ailieluibh.autumngarden;
 
 import net.runelite.api.NPC;
 import net.runelite.api.coords.WorldPoint;

@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.autumngarden;
+package com.ailieluibh.autumngarden;
 
 import lombok.AccessLevel;
 import lombok.Getter;

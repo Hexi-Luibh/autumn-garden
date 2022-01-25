@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.autumngarden;
+package com.ailieluibh.autumngarden;
 
 public enum AutumnGarden {
 //    WINTER,
