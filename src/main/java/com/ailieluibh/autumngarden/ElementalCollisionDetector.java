@@ -41,8 +41,7 @@ public class ElementalCollisionDetector {
                 case 0:
                     return true;
                 case 1:
-                    if (npcs[0].getOrientation() == 512 && npcs[0].getWorldLocation().getX() < 2906
-                            && npcs[0].getWorldLocation().getX() > 2900)
+                    if (npcs[0].getOrientation() == 512 && npcs[0].getWorldLocation().getX() < 2906)
                         return true;
                     break;
                 case 2:
