@@ -62,7 +62,8 @@ public class ElementalCollisionDetector {
                         return true;
                     break;
                 case 5:
-                    if (npcs[3].getWorldLocation().getY() > 5453)
+                    if (npcs[3].getWorldLocation().getY() > 5453
+                            || (npcs[3].getWorldLocation().getY() > 5450 && npcs[3].getWorldLocation().getX() >= 2905))
                         return true;
                     break;
                 case 6:
