@@ -41,8 +41,7 @@ public class ElementalCollisionDetector {
                 case 0:
                     return true;
                 case 1:
-                    if (npcs[0].getOrientation() == 512 && npcs[0].getWorldLocation().getX() < 2906
-                            && npcs[0].getWorldLocation().getX() > 2900)
+                    if (npcs[0].getOrientation() == 512 && npcs[0].getWorldLocation().getX() < 2906)
                         return true;
                     break;
                 case 2:
@@ -62,12 +61,13 @@ public class ElementalCollisionDetector {
                         return true;
                     break;
                 case 5:
-                    if (npcs[3].getWorldLocation().getY() > 5453)
+                    if (npcs[3].getWorldLocation().getY() > 5453
+                            || (npcs[3].getWorldLocation().getY() > 5450 && npcs[3].getWorldLocation().getX() >= 2905))
                         return true;
                     break;
                 case 6:
-                    if ((npcs[3].getWorldLocation().getY() > 5452 && npcs[3].getWorldLocation().getX() > 2904) &&
-                       (npcs[4].getOrientation() == 1536 && npcs[4].getWorldLocation().getX() < 2913))
+                    if ((npcs[3].getWorldLocation().getX() >= 2904 || npcs[3].getWorldLocation().getY() > 5453) &&
+                       (npcs[4].getOrientation() == 1536 || npcs[4].getWorldLocation().getX() < 2905))
                         return true;
                     break;
                 case 7:
