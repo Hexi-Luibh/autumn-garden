@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import net.runelite.api.Client;
 import net.runelite.api.Player;
-import net.runelite.api.Varbits;
+import net.runelite.api.gameval.VarbitID;
 import net.runelite.api.coords.WorldPoint;
 import net.runelite.api.events.ChatMessage;
 import net.runelite.api.events.GameTick;
@@ -125,11 +125,11 @@ public class AutumnGardenPlugin extends Plugin {
 		// check for stamina usage
 		int stamThreshold = config.staminaThreshold();
 		if (stamThreshold != 0) {
-			boolean stamActive = client.getVar(Varbits.RUN_SLOWED_DEPLETION_ACTIVE) != 0;
-			if (client.getEnergy() <= stamThreshold && !stamActive && !sentStaminaNotification) {
+			boolean stamActive = client.getVarbitValue(VarbitID.STAMINA_ACTIVE) != 0;
+			if (client.getEnergy() / 100 <= stamThreshold && !stamActive && !sentStaminaNotification) {
 				notifier.notify(STAMINA_MESSAGE, TrayIcon.MessageType.WARNING);
 				sentStaminaNotification = true;
-			} else if (client.getEnergy() > stamThreshold) {
+			} else if (client.getEnergy() / 100 > stamThreshold) {
 				sentStaminaNotification = false;
 			}
 		}
