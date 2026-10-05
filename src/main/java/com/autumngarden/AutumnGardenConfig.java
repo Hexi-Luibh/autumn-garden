@@ -1,4 +1,4 @@
-package com.ailieluibh.autumngarden;
+package com.autumngarden;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
