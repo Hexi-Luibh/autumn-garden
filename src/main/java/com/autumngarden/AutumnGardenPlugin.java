@@ -1,4 +1,4 @@
-package com.ailieluibh.autumngarden;
+package com.autumngarden;
 
 import com.google.inject.Provides;
 import lombok.AccessLevel;

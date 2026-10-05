@@ -1,4 +1,4 @@
-package com.ailieluibh.autumngarden;
+package com.autumngarden;
 
 import net.runelite.api.Client;
 import net.runelite.api.NPC;

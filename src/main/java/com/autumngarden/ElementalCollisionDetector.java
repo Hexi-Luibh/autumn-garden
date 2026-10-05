@@ -1,4 +1,4 @@
-package com.ailieluibh.autumngarden;
+package com.autumngarden;
 
 import net.runelite.api.NPC;
 import net.runelite.api.coords.WorldPoint;

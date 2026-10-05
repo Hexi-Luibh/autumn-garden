@@ -1,4 +1,4 @@
-package com.ailieluibh.autumngarden;
+package com.autumngarden;
 
 public enum AutumnGarden {
 //    WINTER,
