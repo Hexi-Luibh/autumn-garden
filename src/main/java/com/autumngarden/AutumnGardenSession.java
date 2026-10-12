@@ -1,4 +1,4 @@
-package com.ailieluibh.autumngarden;
+package com.autumngarden;
 
 import lombok.AccessLevel;
 import lombok.Getter;
